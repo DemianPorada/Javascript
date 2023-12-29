@@ -1,31 +1,31 @@
-const age = 14;
+// const age = 14;
 
-console.log(age);
+// console.log(age);
 
-const name = "Demian";
+// const name = "Demian";
 
-console.log(name);
+// console.log(name);
 
-const isStudent = true;
+// const isStudent = true;
 
-console.log(isStudent);
+// console.log(isStudent);
 
-const myString = "the best revenge is great success";
+// const myString = "the best revenge is great success";
 
-console.log(myString);
+// console.log(myString);
 
-let myNumber = 22;
-myNumber += 10;
-console.log(myNumber);
+// let myNumber = 22;
+// myNumber += 10;
+// console.log(myNumber);
 
-const myNull = null;
-console.log(myNull);
+// const myNull = null;
+// console.log(myNull);
 
-const yourname = prompt("Яке твоє ім`я?");
-console.log(yourname);
-alert('hello ' + yourname);
-confirm("Ви дійсно хочите покинути сторінку?")
+// const yourname = prompt("Яке твоє ім`я?");
+// console.log(yourname);
+// alert('hello ' + yourname);
+// confirm("Ви дійсно хочите покинути сторінку?")
 
-alert(" наступна дія буде небезпечна");
+// alert(" наступна дія буде небезпечна");
 
-confirm("Ви впевненні що хочете продовжити?")
+// confirm("Ви впевненні що хочете продовжити?")
