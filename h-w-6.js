@@ -18,4 +18,7 @@
 // }
 
 // 3
+console.log(3 + 4);
+console.log("Dragon's mother said \"No\"");
+console.log('- Are you hungry?\n- Aaaarrrgh!');
 
