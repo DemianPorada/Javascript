@@ -18,7 +18,12 @@
 // }
 
 // 3
-console.log(3 + 4);
-console.log("Dragon's mother said \"No\"");
-console.log('- Are you hungry?\n- Aaaarrrgh!');
+// console.log(3 + 4);
+// console.log("Dragon's mother said \"No\"");
+// console.log('- Are you hungry?\n- Aaaarrrgh!');
+// let rublesPerDollar = 60;
+// let dollarsCount = 50 * 1.25; // 62.5
+// let rublesCount = dollarsCount * rublesPerDollar; // 3750
 
+// console.log('The price is ' + rublesCount + ' rubles')
+// console.log(0.2 + 0.1);
