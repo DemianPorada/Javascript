@@ -30,8 +30,8 @@
 // Тернарний оператор це скорочений синтаксис if  else
 // він пишеться : 
 // Умова : інструкція яка повинна виконатись при true при умові : інструкція яка повинна виконатись при false  в умові
-const savedPassword = "uopq8r90r";
-const password = prompt("Введіть пароль!");
+// const savedPassword = "uopq8r90r";
+// const password = prompt("Введіть пароль!");
 // if(savedPassword === password){
 //     alert("Ласкаво просимо!")
 // } else{
@@ -66,3 +66,17 @@ const password = prompt("Введіть пароль!");
 //     default
 //     Інструкція якщо в всіх кейсах false
 // }
+// напиши скрипт входження числа у відрізок зазначений в х1 та х2.
+// від х1 до х2
+// до х1 або після х2
+const x1 = 10;
+const x2 = 30;
+const number = 45;
+if(number >= x1 && number <= x2){
+    console.log("Число входить в проміжок")
+} else if (number < x1 || number > x2){
+    console.log("Число не входить в проміжок")
+}
+
+
+
