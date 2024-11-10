@@ -12,12 +12,12 @@ let total = 0;
 for(let i = min; i <= max; i += 1){
 // 3.на кожній ітерації зробити перевірку на парність числа
     if (i % 2 === 0){
+        // 4.якщо число парне додати його в total
         console.log('парне число: ', i);
         total +=1;
     }
 }
 console.log(total);
-// 4.якщо число парне додати його в total
 
 
 for (let i = 0; i <= 10; i +=1){
@@ -28,6 +28,8 @@ for (let i = 0; i <= 10; i +=1){
         console.log("Зупиняємо цикл" , i);
     }
 }
+
+
 for (let i = 1; i <= 5; i +=2){
     console.log(i);
 }
