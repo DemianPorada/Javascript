@@ -18,3 +18,5 @@ for(let i = 0; i < userNames.length; i += 1) {
 for(let i = 0; i < cities.length; i += 1){
     console.log(cities[1]);
 }
+const fruits = ["apple", "banan", "orange"]
+console.log(fruits[0].toLowerCase);
