@@ -98,6 +98,11 @@ console.log(reversStr);
 // Повинно вийти top-10-benefits-of-react-framework
 
 const title = 'Top 10 benefits of React framework';
+const noralizeTitle = title.toLocaleLowerCase();
+const arrayOf = noralizeTitle.split(" ");
+console.log(arrayOf);
+const slugTitle = arrayOf.join("-");
+console.log(slugTitle);
 
 
 /*
@@ -129,17 +134,16 @@ const cards = [
   /*
    * Видалення (по індексу), метод indexOf()
    */
-  const cardToRemove = 'Карточка-3';
-
- 
+//   const cardToRemove = 'Карточка-3';
+//   const indexOfcardToRemove = cards.indexOf.off( cardToRemove)
+//  console.log(cards.indexOf(cardToRemove));
+//   cards.splice()
 
   /*
    * Додавання (по індексу)
    */
   
 const cardToInsert = 'Карточка-6';
-
-
 
   /*
    * Оновлення (по індексу)
