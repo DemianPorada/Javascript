@@ -143,9 +143,38 @@ const cards = [
    * Додавання (по індексу)
    */
   
-const cardToInsert = 'Карточка-6';
+// const cardToInsert = 'Карточка-6';
+// const lastIndex = cards.length;
+// cards.splice(lastIndex, 0, cardToInsert);
+// console.log(cards);
 
   /*
    * Оновлення (по індексу)
    */
   const cardToUpdate = 'Карточка-4';
+const Num4Card = cards.indexOf(cardToUpdate);
+cards.splice(Num4Card, 1, "kartochka 4");
+console.log(cards);
+
+
+
+
+
+
+
+//   const words =  "Привіт мене звати Дем`ян";
+//   const array = words.split(" ");
+//   console.log(array)
+//   const word = array.join(" ").toLocaleUpperCase();
+//   console.log(word);
+
+//   const drinks = ["coffee", "tea", "water"];
+//   drinks.push("juice");
+//   console.log(drinks);
+//   // drinks.pop();
+//   // console.log(drinks);
+// // const hotDrinks = drinks.slice(0, 2);
+// // console.log(hotDrinks);
+// // console.log(drinks);
+// const hotDrinks = drinks.slice(3, 4);
+// console.log(hotDrinks);
