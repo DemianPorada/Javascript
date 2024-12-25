@@ -105,22 +105,37 @@ add(5, 10, 15);
  * Доповни код функції add таким чином, щоб вона повертала результат додавання 
  * значень трьох параметрів: a, b і c.
  */
-function add(a, b, c) {
-    return a + b + c
+// function add(a, b, c) {
+//     return a + b + c
+// }
+// const answer = add(10, 25, 5);
+// console.log(answer);
+// /**
+//  * Яким буде порядок логів в інструментах розробника?
+//  */
+// console.log("A");
+
+// function logStuff() {
+//   console.log("B");
+// }
+
+// console.log("C");
+
+// logStuff();
+
+// console.log("D");
+
+
+function calculate(number1, number2, callback){
+    callback(number1, number2)
+
 }
-const answer = add(10, 25, 5);
-console.log(answer);
-/**
- * Яким буде порядок логів в інструментах розробника?
- */
-console.log("A");
-
-function logStuff() {
-  console.log("B");
+const add = function(a, b){
+    return a + b
 }
 
-console.log("C");
-
-logStuff();
-
-console.log("D");
+const subtraction = function(a, b){
+    return a - b
+}
+calculate(10, 20, add)
+calculate(10, 20, subtraction)
