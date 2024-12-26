@@ -126,16 +126,37 @@ add(5, 10, 15);
 // console.log("D");
 
 
-function calculate(number1, number2, callback){
-    callback(number1, number2)
+// function calculate(number1, number2, callback){
+//     callback(number1, number2)
 
-}
-const add = function(a, b){
-    return a + b
-}
+// }
+// const add = function(a, b){
+//     return a + b
+// }
 
-const subtraction = function(a, b){
-    return a - b
+// const subtraction = function(a, b){
+//     return a - b
+// }
+// calculate(10, 20, add)
+// calculate(10, 20, subtraction)
+
+/**
+ * Напишіть функцію doTask(callback), яка викликає передану їй функцію.
+ * Напишіть функцію modifyArray(arr, callback), яка приймає масив і колбек для 
+ * зміни кожного елемента масиву (збільшення кожного елемента вдвічі).
+ */
+function modifyArray(array){
+    for(const element of array){
+        console.log(element)
+    }
 }
-calculate(10, 20, add)
-calculate(10, 20, subtraction)
+let newArray = [];
+for(const element of array){
+    if(callback(element)){
+        newArray.push(element);
+    }
+}
+// function callback(value){
+//     return value >=3
+// }
+// modifyArray([1, 2, 3, 4, 5])
