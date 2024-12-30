@@ -42,13 +42,13 @@
 // console.log(LongestWord);
 
 // 4
-const formatString = function(string){
-    if(string.lenght <= 40){
-        return string
-    }
-const letters = string.split('');
-const totalTodelete = string.lenght - 40
- return letters.splice(40, totalTodelete, '...')
- .join('')
-}
-console.log(formatString('qwerty'))
+// const formatString = function(string){
+//     if(string.lenght <= 40){
+//         return string
+//     }
+// const letters = string.split('');
+// const totalTodelete = string.lenght - 40
+//  return letters.splice(40, totalTodelete, '...')
+//  .join('')
+// }
+// console.log(formatString('qwerty'))
