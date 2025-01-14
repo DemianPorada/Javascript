@@ -65,13 +65,64 @@
 // };
 // console.log(friends);
 
-const feedback = {
-    good: 5,
-    neutral: 10,
-    bad: 3,
-  };
-  const keys = Object.keys(feedback);
-  console.log(keys);
-  for ( const key of keys){
-    console.log(feedback.key)
-  }
+// const feedback = {
+//     good: 5,
+//     neutral: 10,
+//     bad: 3,
+//   };
+//   const keys = Object.keys(feedback);
+//   console.log(keys);
+//   for ( const key of keys){
+//     console.log(feedback.key)
+//   }
+
+// * Пошук найнижчої або найвищої температури (числа)
+// */
+// const temps = [18, 14, 12, 21, 17, 29, 24];
+
+// const lowestTemp = Math.min()
+// const hightTemp = Math.max()
+
+// const cart = {
+//   items: [],
+//   getItems() {},
+//   add(productName) {},
+//   remove(productName) {},
+//   clear() {},
+//   countTotalPrice() {},
+//   increaseQuantity(productName) {},
+//   decreaseQuantity(productName) {},
+// };
+/*
+* Працюємо з колекцією товарів в кошику:
+* - getItems()
+* - add(product)
+* - remove(productName)
+* - clear()
+* - countTotalPrice()
+* - increaseQuantity(productName)
+* - decreaseQuantity(productName)
+*
+* { name: '🍎', price: 50 }
+* { name: '🍇', price: 70 }
+* { name: '🍋', price: 60 }
+* { name: '🍓', price: 110 }
+*/
+// console.table(cart.getItems())
+
+const cart = {
+  items: [],
+  getItems() {
+    console.log(this.items)
+  },
+  add(productName) {
+    
+  },
+  remove(productName) {},
+  clear() {},
+  countTotalPrice() {},
+  increaseQuantity(productName) {},
+  decreaseQuantity(productName) {},
+};
+cart.getItems()
+cart.add( { name: '🍎', price: 50 })
