@@ -110,19 +110,19 @@
 */
 // console.table(cart.getItems())
 
-const cart = {
-  items: [],
-  getItems() {
-    console.log(this.items)
-  },
-  add(productName) {
+// const cart = {
+//   items: [],
+//   getItems() {
+//     console.log(this.items)
+//   },
+//   add(productName) {
     
-  },
-  remove(productName) {},
-  clear() {},
-  countTotalPrice() {},
-  increaseQuantity(productName) {},
-  decreaseQuantity(productName) {},
-};
-cart.getItems()
-cart.add( { name: '🍎', price: 50 })
+//   },
+//   remove(productName) {},
+//   clear() {},
+//   countTotalPrice() {},
+//   increaseQuantity(productName) {},
+//   decreaseQuantity(productName) {},
+// };
+// cart.getItems()
+// cart.add( { name: '🍎', price: 50 })
