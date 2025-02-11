@@ -88,3 +88,12 @@ const tweets = [
   { id: '003', likes: 8, tags: ['css', 'react'] },
   { id: '004', likes: 0, tags: ['js', 'nodejs', 'react'] },
 ];
+
+/*
+ * Ведемо статистику тегів
+ */
+const tagsStats = allTags.reduce((acc, tag) => {}, {});
+
+// console.log(tagsStats);
+
+['js', 'nodejs', 'html', 'css', 'html', 'js', 'nodejs', 'css', 'react', 'js', 'nodejs', 'react']
