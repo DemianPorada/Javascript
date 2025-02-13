@@ -65,21 +65,21 @@ console.log(anyHardcorePlayers)
  * - Замінює все на світі, але використовувати потрібно з розумом
  */
 
- const numbers = [5, 10, 15, 20, 25];
+//  const numbers = [5, 10, 15, 20, 25];
 
-const total = numbers.reduce(function (acc, number) {
-  console.log('number: ', number);
-  console.log('acc: ', acc);
-  return acc += number
-},0);
-console.log(total);
+// const total = numbers.reduce(function (acc, number) {
+//   console.log('number: ', number);
+//   console.log('acc: ', acc);
+//   return acc += number
+// },0);
+// console.log(total);
 
 
-const salary = {
-  mango: 100,
-  poly: 50,
-  ajax: 150,
-};
+// const salary = {
+//   mango: 100,
+//   poly: 50,
+//   ajax: 150,
+// };
 
 const tweets = [
   { id: '000', likes: 5, tags: ['js', 'nodejs'] },
@@ -92,8 +92,37 @@ const tweets = [
 /*
  * Ведемо статистику тегів
  */
-const tagsStats = allTags.reduce((acc, tag) => {}, {});
+// const tagsStats = allTags.reduce((acc, tag) => {}, {});
 
-// console.log(tagsStats);
+// // console.log(tagsStats);
 
-['js', 'nodejs', 'html', 'css', 'html', 'js', 'nodejs', 'css', 'react', 'js', 'nodejs', 'react']
+// ['js', 'nodejs', 'html', 'css', 'html', 'js', 'nodejs', 'css', 'react', 'js', 'nodejs', 'react']
+
+
+
+
+
+
+
+
+const fnA = function () { } //функціональний вираз
+function fnB() {} //об'явлення функції
+
+const fnC =(a, b)=> a + b //стрілкова функція
+
+/*
+ * Array.prototype.sort(callback(currentEl, nextEl){})
+ * - Сортує та ЗМІНЮЄ оригінальний масив
+ * - За замовчуванням:
+ *    - Сортує за зростанням 
+ *    - приводить елементи в рядок і сортує по [Unicode](https://unicode-table.com/en/)
+ */
+
+// const numbers = [1, 9, 6, 2, 3];
+
+
+// const letters = ['b', 'B', 'a', 'A'];
+
+const items = ["réservé", "premier", "communiqué", "café", "adieu", "éclair"];
+ items.sort((currentEl, nextEl) => currentEl.localeCompare(nextEl) )
+ console.log(items)
