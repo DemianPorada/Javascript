@@ -27,13 +27,13 @@
     const keys = Object.keys(obj);
     return keys.length;
   }
-  const member = {
+  const obj = {
     name: "Dima",
     age: 15,
     hobby: "reading",
   };
   
-  console.log(countProps(user));
+  console.log(countProps(obj));
   
   // 3
   // Напиши функцію findBestEmployee(employees), яка приймає об'єкт співробітників
@@ -45,8 +45,8 @@
   //   let bestEmployee = '';
   //   let maxTasks = 0;
     
-  //   for (const [name, tasks] of
-  //     Object.entries(employees)){
+  //   for (const name in employees){
+  //     const tasks = employees[name];
   //       if (tasks > maxTasks){
   //         maxTasks = tasks;
   //         bestEmployee = name;
@@ -60,7 +60,6 @@
   //   Anton:5,
   //   Arsen:4
   // };
-
   // console.log(findBestEmployee(employees));
   
   // 4
