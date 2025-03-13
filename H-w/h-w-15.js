@@ -119,7 +119,7 @@ console.log(getUsersWithGender(users, 'male'));
 // Отримати масив тільки неактивних користувачів (поле isActive).
 
 const getInactiveUsers = users => {
-  return users.filter(user => user.email === email);
+  return users.filter(user => user.isActive === false);
 };
 
 console.log(getInactiveUsers(users)); // [об'єкт Moore Hensley, об'єкт Ross Vazquez, об'єкт Blackburn Dotson]
@@ -179,7 +179,7 @@ console.log(getNamesSortedByFriendsCount(users));
 // Отримати масив всіх умінь всіх користувачів (поле skills), при цьому не має бути повторюваних умінь і вони повинні бути відсортовані в алфавітному порядку.
 
 const getSortedUniqueSkills = users => {
-  return [...new Set(users.flatMap(user => user.sills))].sort()
+  return [...new Set(users.flatMap(user => user.skills))].sort()
 };
 
 console.log(getSortedUniqueSkills(users));
