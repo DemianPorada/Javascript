@@ -29,3 +29,48 @@
 // <p class="product__descr">Опис</p>
 // <p product__pridct>Ціна: 1111 кредитів</p>
 // </article>`;
+
+// const targetBtn = document.querySelector('.js-target-btn');
+// const addListenerBtn = document.querySelector('.js-add-listener');
+// const removeListenerBtn = document.querySelector('.js-remove-listener');
+
+const products = [
+    {
+        name: 'Товар-2',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa eius deleniti dolor facilis consectetur laborum aperiam exercitationem quam hic natus.',
+        price: 3000,
+        available: false,
+        onSale: false,
+    },
+    {
+        name: 'Товар-3',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa eius deleniti dolor facilis consectetur laborum aperiam exercitationem quam hic natus.',
+        price: 1500,
+        available: true,
+        onSale: false,
+    },
+    {
+        name: 'Товар-4',
+        description:
+            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa eius deleniti dolor facilis consectetur laborum aperiam exercitationem quam hic natus.',
+        price: 2500,
+        available: false,
+        onSale: false,
+    },
+];
+
+
+
+const articles = products.map((product) => {
+    return `<article class="product">
+       <h2 class="product__name">${product.name}</h2>
+       <p class="product__descr">${product.description}</p>
+     <p product__pridct>Ціна: ${product.price} кредитів</p>
+      </article>`
+})
+console.log(articles);
+
+
+articleEl.innerHTML = articles.join(' ')
