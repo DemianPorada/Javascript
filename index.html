@@ -7,20 +7,39 @@
     <script src="./practice/Dom.js" type="module"></script>
 </head>
 <body>
-    <label>
-        Ім'я
-        <input type="text" class="js-input" />
+  <form class="js-register-form" autocomplete="off">
+    <div role="group">
+      <label>
+        Пошта
+        <input type="email" name="email" />
       </label>
-  
-      <p>
-        <label>
-          <input type="checkbox" class="js-license" />
-          Приймаю умови договору
-        </label>
-      </p>
-  
-      <button type="submit" disabled class="js-button">
-        Зареєструватися як <span>Анонім</span>
-      </button>
+      <br>
+      <label>
+        Пароль
+        <input  name="password" type="password" />
+      </label>
+    </div>
+
+    <br />
+    <div role="group">
+      <b>Тип піписки:</b>
+      <label>
+        <input type="radio" name="subscription" value="free" />
+        Free
+      </label>
+      <label>
+        <input type="radio" name="subscription" value="basic" />
+        Basic
+      </label>
+      <label>
+        <input type="radio" name="subscription" value="pro" />
+        Pro
+      </label>
+    </div>
+
+    <br />
+    <button type="submit">Зареєструватися</button>
+  </form>
+
 </body>
 </html> 
