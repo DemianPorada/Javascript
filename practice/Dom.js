@@ -77,18 +77,32 @@
 
 
 
-const refs = {
-    output: document.querySelector('.js-output'),
-    clearBtn: document.querySelector('.js-clear'),
-  };
+// const refs = {
+//     output: document.querySelector('.js-output'),
+//     clearBtn: document.querySelector('.js-clear'),
+//   };
   
-//  window.addEventListener('keydown', onKeypress)
+// //  window.addEventListener('keydown', onKeypress)
 
- function onKeypress(event){
-  // console.log('event.code: ', event.code);
-  // console.log('event.key: ', event.key);
+//  function onKeypress(event){
+//   // console.log('event.code: ', event.code);
+//   // console.log('event.key: ', event.key);
 
- }
+//  }
 
 const closeButton = document.querySelector('[data-action="close-modal"]');
 const openButton = document.querySelector('[data-action="open-modal"]');
+
+closeButton.addEventListener("click", toggleModal);
+openButton.addEventListener("click", toggleModal);
+
+function toggleModal() {
+  document.body.classList.toggle("show-modal");
+}
+
+window.addEventListener('keydown', (event) => {
+  //console.log(event.key);
+  if (event.key === 'Escape' && document.body.classList.contains('show-modal')) {
+      onBtnClick()
+  }
+})
