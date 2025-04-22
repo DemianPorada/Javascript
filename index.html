@@ -4,89 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./H-w/h-w-18.js"></script>
-    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <script src="./H-w/h-w-19.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <!-- Завдання 1
-В HTML є список категорій ul#categories. -->
-<!-- Напиши скрипт, який виконає наступні операції.
-Порахує і виведе в консоль кількість категорій в ul#categories, тобто елементів li.item.
-Вийде 'У списку 3 категорії.'.
-Для кожного елемента li.item в списку ul#categories,
-знайде і виведе в консоль текст заголовка елемента (тега h2) і кількість елементів
-в категорії (всіх вкладених в нього елементів li).
-Наприклад, для першої категорії вийде:
-Категорія: Тварини
-Кількість елементів: 4 -->
-
-<ul id="categories">
-  <li class="item">
-    <h2>Тварини</h2>
-    <ul>
-      <li>Кіт</li>
-      <li>Хом'як</li>
-      <li>Кінь</li>
-      <li>Папуга</li>
-    </ul>
-  </li>
-  <li class="item">
-    <h2>Продукти</h2>
-    <ul>
-      <li>Хліб</li>
-      <li>Петрушка</li>
-      <li>Сир</li>
-    </ul>
-  </li>
-  <li class="item">
-    <h2>Технології</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Node</li>
-    </ul>
-  </li>
-</ul>
-
-<!-- Завдання 2 -->
-<!-- В HTML є пустий список ul#ingredients. -->
-<!-- В JS є масив рядків.
-Напиши скрипт, який для кожного елемента масиву ingredients створить окремий li,
- після чого вставить всі li за одну операцію в список ul.ingredients.
-  Для створення DOM-вузлів використовуй document.createElement(). -->
-<ul id="ingredients"></ul>
-
-
-<!-- Завдання 3
-Напиши скрипт для створення галереї зображень по масиву даних.
-
-В HTML є список ul#gallery.
-Використовуй масив об'єктів images для створення тегів img вкладених в li. 
-Для створення розмітки використовуй шаблонні рядки і innerHTML
-
-Всі елементи галереї повинні додаватися в DOM за одну операцію вставки.
-Додай мінімальне оформлення галереї флексбоксами або грід через   css-класи. -->
-<ul id="gallery" class="gallery"></ul> 
-
-<style>
-  .gallery {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-  }
-
-  .gallery li img {
-    display: block;
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
-  }
-</style>
-
-
+    <!-- Завдання 1 -->
+    <section>
+      <h2>1. Зміна кольору фону</h2>
+      <form>
+        <p>Choose a color:</p>
+        <label>
+          <input type="radio" name="color" value="red" checked />
+          Red
+        </label>
+        <label>
+          <input type="radio" name="color" value="white" />
+          White
+        </label>
+        <label>
+          <input type="radio" name="color" value="green" />
+          Green
+        </label>
+      </form>
+    </section>
+  
+    <!-- Завдання 2 -->
+    <section>
+      <h2>2. Ім'я користувача</h2>
+      <input type="text" placeholder="Ваше ім'я?" id="name-input" />
+      <h1>Привіт, <span id="name-output">незнайомець</span>!</h1>
+    </section>
+  
+    <!-- Завдання 3 -->
+    <section>
+      <h2>3. Валідація довжини</h2>
+      <input type="text" id="validation-input" data-length="6" placeholder="Введи 6 символів"/>
+    </section>
+  
+    <!-- Завдання 4 -->
+    <section>
+      <h2>4. Зміна розміру тексту</h2>
+      <input id="font-size-control" type="range" min="10" max="100" value="16" />
+      <br />
+      <span id="text">Абракадабра!</span>
+    </section>
 </body>
 </html> 
